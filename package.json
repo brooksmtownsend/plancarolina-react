@@ -16,7 +16,6 @@
   "dependencies": {
     "@types/gapi": "0.0.35",
     "@types/gapi.auth2": "0.0.44",
-    "@types/node": "^8.0.28",
     "@types/react": "^16.0.5",
     "@types/react-dom": "^15.5.4",
     "@types/react-facebook-login": "^3.6.1",
@@ -42,5 +41,8 @@
       "changeOrigin": true,
       "host": "wwwx.cs.unc.edu"
     }
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.28"
   }
 }

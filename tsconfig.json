@@ -16,7 +16,7 @@
     // "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "experimentalDecorators": true,
-    "types": ["gapi", "gapi.auth2"]
+    "types": ["node", "gapi", "gapi.auth2"]
   },
   "exclude": [
     "node_modules",
