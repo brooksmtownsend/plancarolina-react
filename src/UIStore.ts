@@ -21,7 +21,7 @@ class UIStore {
   @observable isSearchingDepartment = true
   @observable isSearchingName = true
   @observable isSearchingMajor = true
-  @observable addMajorPopupActive = true
+  @observable addMajorPopupActive = false
   @observable loginPopupActive = false
 
   @observable majorResults: string[] = []
@@ -57,7 +57,7 @@ class UIStore {
 
   @action.bound handleLoginPopupClicked(e: MouseEvent<HTMLDivElement>) {
     if ((e.target as HTMLElement).classList.contains('Toolbar-item') || (e.target as HTMLElement).classList.contains('Toolbar-text')) {
-      this.loginPopupActive = true
+      this.loginPopupActive = !this.loginPopupActive;
     }
   }
 
